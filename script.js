@@ -1,3 +1,6 @@
+
+// Add the item + the price to the shopping cart div when you click "Add to Cart"... Use Handlebars.
+
 // an array with all of our cart items
 var cart = [];
 
@@ -18,8 +21,14 @@ var clearCart = function () {
 }
 
 $('.view-cart').on('click', function () {
-  // TODO: hide/show the shopping cart!
+   $( ".shopping-cart" ).toggle();
 });
+
+// var source = $('#store-template').html();
+// var template = Handlebars.compile(source)
+// var newHTML = template({item: "bread", price: "15"});
+
+
 
 $('.add-to-cart').on('click', function () {
   // TODO: get the "item" object from the page
